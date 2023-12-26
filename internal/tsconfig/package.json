@@ -1,0 +1,17 @@
+{
+	"name": "@internal/tsconfig",
+	"version": "0.0.1",
+	"type": "module",
+	"files": [
+		"base.json",
+		"vue.json",
+		"web.json",
+		"esm.json"
+	],
+	"peerDependencies": {
+		"typescript": ">=5.3.3"
+	},
+	"volta": {
+		"extends": "../../package.json"
+	}
+}

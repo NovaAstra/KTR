@@ -1,0 +1,11 @@
+{
+	"name": "@internal/prettier-config",
+	"type": "module",
+	"main": "base.mjs",
+	"peerDependencies": {
+		"prettier": ">=3.1.1"
+	},
+	"volta": {
+		"extends": "../../package.json"
+	}
+}

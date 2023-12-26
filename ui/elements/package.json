@@ -1,0 +1,7 @@
+{
+	"name": "@ktr/elements",
+	"type": "module",
+	"volta": {
+		"extends": "../../package.json"
+	}
+}

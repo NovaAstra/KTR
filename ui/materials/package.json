@@ -1,0 +1,11 @@
+{
+	"name": "@ktr/materials",
+	"version": "0.0.1",
+	"type": "module",
+	"dependencies": {
+		"vue": "^3.3.13"
+	},
+	"volta": {
+		"extends": "../../package.json"
+	}
+}

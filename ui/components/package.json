@@ -1,0 +1,14 @@
+{
+	"name": "@ktr/components",
+	"version": "0.0.1",
+	"type": "module",
+	"dependencies": {
+		"vue": "^3.3.13"
+	},
+	"devDependencies": {
+		"vite": "^5.0.10"
+	},
+	"volta": {
+		"extends": "../../package.json"
+	}
+}

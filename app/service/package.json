@@ -1,0 +1,7 @@
+{
+	"name": "@app/service",
+	"type": "module",
+	"volta": {
+		"extends": "../../package.json"
+	}
+}

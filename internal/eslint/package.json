@@ -1,0 +1,7 @@
+{
+	"name": "@internal/eslint-config",
+	"type": "module",
+	"volta": {
+		"extends": "../../package.json"
+	}
+}
