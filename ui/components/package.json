@@ -3,10 +3,14 @@
 	"version": "0.0.1",
 	"type": "module",
 	"dependencies": {
-		"vue": "^3.3.13"
+		"@ktr/themes": "workspace:^",
+		"vue": "^3.3.13",
+		"@vanilla-extract/css": "^1.14.0",
+		"@vanilla-extract/sprinkles": "^1.6.1"
 	},
 	"devDependencies": {
-		"vite": "^5.0.10"
+		"vite": "^5.0.10",
+		"@storybook/vue3": "7.6.6"
 	},
 	"volta": {
 		"extends": "../../package.json"

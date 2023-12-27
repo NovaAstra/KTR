@@ -1,11 +1,17 @@
+import * as animation from './animation'
+import * as border from './border'
 import * as space from './space'
 import * as typography from './typography'
-import * as border from './border'
+import * as zIndex from './zIndex'
+import * as cursor from './cursor'
 
 export const baseTokens = {
+	...animation,
+	...border,
 	...space,
 	...typography,
-	...border,
+	...zIndex,
+	...cursor,
 }
 
 export const tokens = {
