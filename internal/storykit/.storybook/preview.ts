@@ -1,13 +1,15 @@
-const preview = {
-	parameters: {
-		actions: { argTypesRegex: '^on[A-Z].*' },
-		controls: {
-			matchers: {
-				color: /(background|color)$/i,
-				date: /Date$/i,
-			},
-		},
-	},
-}
+import type { Preview } from "@storybook/vue3";
 
-export default preview
+const preview: Preview = {
+  parameters: {
+    actions: { argTypesRegex: "^on[A-Z].*" },
+    controls: {
+      matchers: {
+        color: /(background|color)$/i,
+        date: /Date$/i,
+      },
+    },
+  },
+};
+
+export default preview;

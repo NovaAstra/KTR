@@ -1,24 +1,27 @@
 import { createSprinkles, defineProperties } from '@vanilla-extract/sprinkles'
 
-const colors = {
-	'blue-50': '#eff6ff',
-	'blue-100': '#dbeafe',
-	'blue-200': '#bfdbfe',
-	'gray-700': '#374151',
-	'gray-800': '#1f2937',
-	'gray-900': '#111827',
-}
+const unconditionalProperties = defineProperties({
+	properties: {},
+})
 
-const colorProperties = defineProperties({
-	conditions: {
-		lightMode: {},
-		darkMode: { '@media': '(prefers-color-scheme: dark)' },
-	},
-	defaultCondition: 'lightMode',
+const responsiveProperties = defineProperties({
 	properties: {
-		color: colors,
-		background: colors,
+		paddingLeft: ['12px'],
+		paddingRight: ['12px'],
+		display: ['block', 'flex', 'inline-flex', 'grid', 'inline-block', 'none', 'contents'],
+	},
+	shorthands: {
+		fixed: ['display'],
+		px: ['paddingLeft', 'paddingRight'],
 	},
 })
 
-export const atomic = createSprinkles(colorProperties)
+const colorProperties = defineProperties({
+	properties: {},
+})
+
+export const atomic = createSprinkles(
+	responsiveProperties,
+	unconditionalProperties,
+	colorProperties,
+)

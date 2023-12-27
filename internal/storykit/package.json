@@ -6,25 +6,25 @@
 		"storybook": "storybook dev -p 6006",
 		"build-storybook": "storybook build"
 	},
-	"dependencies": {
-		"vue": "^3.3.13"
-	},
 	"devDependencies": {
 		"@internal/tsconfig": "workspace:^",
-		"@storybook/addon-essentials": "^8.0.0-alpha.5",
-		"@storybook/addon-interactions": "^8.0.0-alpha.5",
-		"@storybook/addon-links": "^8.0.0-alpha.5",
-		"@storybook/blocks": "^8.0.0-alpha.5",
-		"@storybook/test": "^8.0.0-alpha.5",
-		"@storybook/vue3": "^8.0.0-alpha.5",
-		"@storybook/vue3-vite": "^8.0.0-alpha.5",
+		"@storybook/addon-essentials": "^7.6.6",
+		"@storybook/addon-interactions": "^7.6.6",
+		"@storybook/addon-links": "^7.6.6",
+		"@storybook/blocks": "^7.6.6",
+		"@storybook/test": "^7.6.6",
+		"@storybook/vue3": "^7.6.6",
+		"@storybook/vue3-vite": "^7.6.6",
 		"@vanilla-extract/vite-plugin": "^3.9.3",
 		"@vitejs/plugin-vue": "^5.0.0",
 		"@vitejs/plugin-vue-jsx": "^3.1.0",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
-		"storybook": "8.0.0-alpha.5",
-		"vite": "^5.0.10"
+		"storybook": "7.6.6",
+		"vite": "^5.0.10",
+		"vue": "^3.3.13",
+		"@vanilla-extract/css": "^1.14.0",
+		"@vanilla-extract/sprinkles": "^1.6.1"
 	},
 	"volta": {
 		"extends": "../../package.json"

@@ -1,5 +1,4 @@
 {
 	"extends": "@internal/tsconfig/vue.json",
-	"compilerOptions": {},
 	"include": [".storybook/**/*.ts"]
 }
