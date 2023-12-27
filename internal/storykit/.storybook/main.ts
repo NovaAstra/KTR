@@ -17,8 +17,8 @@ const config: StorybookConfig = {
 		name: '@storybook/vue3-vite',
 		options: {},
 	},
-	core:{
-		builder: '@storybook/builder-vite'
+	core: {
+		builder: '@storybook/builder-vite',
 	},
 	viteFinal: (config: InlineConfig) => {
 		const plugins = [Vue(), Jsx(), Vanilla()]

@@ -1,9 +1,9 @@
-export const borderStyles = {
+export const borderStyle = {
 	none: 'none',
 	solid: 'solid',
 } as const
 
-export const borderWidths = {
+export const borderWidth = {
 	'0': '0px',
 	'1': '0.063rem',
 	'2': '0.125rem',
@@ -11,3 +11,5 @@ export const borderWidths = {
 	'4': '0.15rem',
 	'5': '0.313rem',
 } as const
+
+export const radius = {} as const

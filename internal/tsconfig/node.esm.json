@@ -1,11 +1,11 @@
 {
-    "$schema": "https://json.schemastore.org/tsconfig",
-    "display": "@internal/tsconfig-node-esm",
-    "extends": "./base.json",
-    "compilerOptions": {
-      "target": "ESNext",
-      "module": "ESNext",
-      "moduleResolution":"Node",
-      "types": ["node"]
-    }
-  }
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"display": "@internal/tsconfig-node-esm",
+	"extends": "./base.json",
+	"compilerOptions": {
+		"target": "ESNext",
+		"module": "ESNext",
+		"moduleResolution": "Node",
+		"types": ["node"]
+	}
+}

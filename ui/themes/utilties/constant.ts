@@ -1,0 +1,1 @@
+export const REM_BASE_SIZE = 16

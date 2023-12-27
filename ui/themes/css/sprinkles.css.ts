@@ -1,23 +1,38 @@
 import { createSprinkles, defineProperties } from '@vanilla-extract/sprinkles'
+import { vars } from './var.css'
 
 const unconditionalProperties = defineProperties({
 	properties: {},
+	shorthands: {},
 })
 
 const responsiveProperties = defineProperties({
 	properties: {
-		paddingLeft: ['12px'],
-		paddingRight: ['12px'],
-		display: ['block', 'flex', 'inline-flex', 'grid', 'inline-block', 'none', 'contents'],
+		borderBottomWidth: vars.borderWidth,
+		borderTopWidth: vars.borderWidth,
+		borderLeftWidth: vars.borderWidth,
+		borderRightWidth: vars.borderWidth,
+		borderStyle: vars.borderStyle,
 	},
 	shorthands: {
-		fixed: ['display'],
-		px: ['paddingLeft', 'paddingRight'],
+		boderX: ['borderLeftWidth', 'borderRightWidth'],
+		boderY: ['borderTopWidth', 'borderBottomWidth'],
+		borderWidth: ['borderBottomWidth', 'borderLeftWidth', 'borderRightWidth', 'borderTopWidth'],
+		borderLeftRadius: [],
+		borderRightRadius: [],
+		borderTopRadius: [],
+		borderBottomRadius: [],
+		marginX: [],
+		marginY: [],
+		margin: [],
+		paddingX: [],
+		paddingY: [],
 	},
 })
 
 const colorProperties = defineProperties({
 	properties: {},
+	shorthands: {},
 })
 
 export const atomic = createSprinkles(

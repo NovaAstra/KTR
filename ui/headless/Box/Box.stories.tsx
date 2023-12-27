@@ -16,8 +16,7 @@ export const Primary: Story = {
 	args: {},
 	render: () => ({
 		setup() {
-			return () => <Box p-4 />;
+			return () => <Box border-b={'4'} />
 		},
 	}),
 }
-
