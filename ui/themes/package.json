@@ -2,7 +2,6 @@
 	"name": "@ktr/themes",
 	"version": "0.0.1",
 	"type": "module",
-	"main": "index.ts",
 	"dependencies": {
 		"@ktr/colors": "workspace:^",
 		"@vanilla-extract/css": "^1.14.0",
