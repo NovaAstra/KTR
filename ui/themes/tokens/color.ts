@@ -1,7 +1,13 @@
 import * as colors from '@ktr/colors'
 
+export enum Theme {
+	LIGHT = 'light',
+	DARK = 'dark',
+	SYSTEM = 'system',
+}
+
 export const color = {
-	light: {
+	[Theme.LIGHT]: {
 		...colors.mauve,
 		...colors.mauveA,
 		...colors.slate,
@@ -63,7 +69,7 @@ export const color = {
 		...colors.orange,
 		...colors.orangeA,
 	},
-	dark: {
+	[Theme.DARK]: {
 		...colors.mauveDark,
 		...colors.mauveDarkA,
 		...colors.slateDark,

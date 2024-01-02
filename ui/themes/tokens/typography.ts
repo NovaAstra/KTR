@@ -1,4 +1,4 @@
-import { pixelToRem } from '../utilties/css'
+import { pixelToRem, string } from '../utilties/css'
 
 export const fontFamily = {
 	text: `-apple-system, BlinkMacSystemFont, 'Segoe UI (Custom)', Roboto, 'Helvetica Neue', 'Open Sans (Custom)', system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji'`,
@@ -8,10 +8,10 @@ export const fontFamily = {
 } as const
 
 export const fontWeight = {
-	light: '300',
-	regular: '400',
-	medium: '500',
-	bold: '700',
+	light: string(300),
+	regular: string(400),
+	medium: string(500),
+	bold: string(700),
 } as const
 
 export const fontSize = {

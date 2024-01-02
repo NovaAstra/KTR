@@ -1,14 +1,16 @@
+import { string } from '../utilties/css'
+
 export const zIndex = {
-	deepdive: '-9999',
-	default: '1',
-	dialog: '6000',
-	docked: '4',
-	dropdown: '7000',
-	modal: '9000',
-	overlay: '8000',
-	popup: '5000',
-	reminder: '8500',
-	spinner: '9050',
-	sticky: '100',
-	toast: '10000',
+	deepdive: string(9999),
+	default: string(1),
+	dialog: string(6000),
+	docked: string(4),
+	dropdown: string(7000),
+	modal: string(9000),
+	overlay: string(8000),
+	popup: string(5000),
+	reminder: string(8500),
+	spinner: string(9050),
+	sticky: string(100),
+	toast: string(10000),
 } as const
