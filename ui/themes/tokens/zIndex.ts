@@ -1,31 +1,14 @@
 export const zIndex = {
-	/**
-	 * @description Full screen overlay element.
-	 */
-	fullPageOverlay: '1080',
-
-	/**
-	 * @description Prompt infomation, popover, tooltip, etc.
-	 */
-	popUp: '1060',
-
-	/**
-	 * @description Dropdown menu, dropdown, etc.
-	 */
-	dropdown: '1052',
-
-	/**
-	 * @description Modal.
-	 */
-	modal: '1050',
-
-	/**
-	 * @description Drawer.
-	 */
-	drawer: '1040',
-
-	/**
-	 * @description Frame class elements, header, sideMenu, etc.
-	 */
-	framework: '1000',
+	deepdive: '-9999',
+	default: '1',
+	dialog: '6000',
+	docked: '4',
+	dropdown: '7000',
+	modal: '9000',
+	overlay: '8000',
+	popup: '5000',
+	reminder: '8500',
+	spinner: '9050',
+	sticky: '100',
+	toast: '10000',
 } as const
