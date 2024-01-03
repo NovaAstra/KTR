@@ -1,3 +1,0 @@
-{
-	"extends": "@internal/tsconfig/node.esm.json"
-}

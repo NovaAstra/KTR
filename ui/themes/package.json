@@ -3,7 +3,6 @@
 	"version": "0.0.1",
 	"type": "module",
 	"dependencies": {
-		"@ktr/colors": "workspace:^",
 		"@vanilla-extract/css": "^1.14.0",
 		"@vanilla-extract/sprinkles": "^1.6.1"
 	},
