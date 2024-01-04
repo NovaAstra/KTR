@@ -8,7 +8,7 @@
 	},
 	"peerDependencies": {
 		"@vanilla-extract/css": ">=1.14.0",
-		"@vanilla-extract/sprinkles": ">=1.6.0"
+		"@vanilla-extract/sprinkles": ">=1.6.1"
 	},
 	"volta": {
 		"extends": "../../package.json"
