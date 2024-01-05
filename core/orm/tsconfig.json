@@ -1,0 +1,4 @@
+{
+	"extends": "@internal/tsconfig/node.esm.json",
+	"include": ["**/*.ts"]
+}

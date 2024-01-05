@@ -4,7 +4,7 @@ const base = {
 	tabWidth: 2,
 	useTabs: true,
 	singleQuote: true,
-	printWidth: 100,
+	printWidth: 80,
 	semi: false,
 	arrowParens: 'avoid',
 }
