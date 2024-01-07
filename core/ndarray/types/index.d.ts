@@ -1,9 +1,11 @@
+import { TypedArrayEnum } from '../enums'
+
 export type TypedArray =
 	| Int8Array
-	| Int16Array
-	| Int32Array
 	| Uint8Array
+	| Int16Array
 	| Uint16Array
+	| Int32Array
 	| Uint32Array
 	| Uint8ClampedArray
 	| Float32Array
@@ -11,11 +13,24 @@ export type TypedArray =
 
 export type TypedArrayConstructor =
 	| Int8ArrayConstructor
-    | Int16ArrayConstructor
-    | Int32ArrayConstructor
 	| Uint8ArrayConstructor
+	| Int16ArrayConstructor
 	| Uint16ArrayConstructor
+	| Int32ArrayConstructor
 	| Uint32ArrayConstructor
 	| Uint8ClampedArrayConstructor
 	| Float32ArrayConstructor
 	| Float64ArrayConstructor
+
+export interface INDArrayOptions {
+	dtype?: TypedArrayEnum
+	shape?: number[]
+	size?: number
+}
+
+export interface INDArray {
+	data: TypedArray
+	dtype: TypedArrayEnum
+	shape: number[]
+	size: number
+}

@@ -1,5 +1,5 @@
 {
-	"name": "@ktr/vector",
+	"name": "@ktr/ndarray",
 	"version": "0.0.1",
 	"type": "module",
 	"dependencies": {},
