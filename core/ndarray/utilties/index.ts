@@ -2,10 +2,10 @@ import type { TypedArray, TypedArrayConstructor } from '../types'
 
 import { TypedArrayEnum } from '../enums'
 
-export const isTyped = <T extends TypedArray>(data: any): data is T =>
+export const isTypedArray = <T extends TypedArray>(data: any): data is T =>
 	ArrayBuffer.isView(data) && !(data instanceof DataView)
 
-export const getTyped = (dtype: TypedArrayEnum): TypedArrayConstructor => {
+export const getTypedArray = (dtype: TypedArrayEnum): TypedArrayConstructor => {
 	switch (dtype) {
 		case 'int8':
 			return Int8Array
@@ -64,11 +64,9 @@ export const flatten = (data: NestedArray<number>): number[] =>
 		[],
 	)
 
-export const getShape = (data: TypedArray | NestedArray<number>): number[] =>
-	Array.isArray(data) || isTyped(data)
-		? [data.length].concat(
-				getShape(data[0] as TypedArray | NestedArray<number>),
-			)
+export const getShape = (data: any[]): number[] =>
+	Array.isArray(data) || isTypedArray(data)
+		? [data.length].concat(getShape(data[0]))
 		: []
 
 export const getSize = (shape: number[]): number =>

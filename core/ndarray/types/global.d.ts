@@ -13,5 +13,9 @@ declare global {
 				: [F, ...Flatten<R>]
 			: [T]
 
-	type NestedArray<T> = Array<T | NestedArray<T>>
+	type FixedArray<T = unknown, D extends number> = T[] & {
+		length: D
+	}
+
+	type NestedArray<T> = T[] | NestedArray<T>[];
 }

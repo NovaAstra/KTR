@@ -1,36 +1,40 @@
 import { TypedArrayEnum } from '../enums'
 
 export type TypedArray =
-	| Int8Array
 	| Uint8Array
-	| Int16Array
-	| Uint16Array
-	| Int32Array
-	| Uint32Array
 	| Uint8ClampedArray
+	| Uint16Array
+	| Uint32Array
+	| Int8Array
+	| Int16Array
+	| Int32Array
+	| BigUint64Array
+	| BigInt64Array
 	| Float32Array
 	| Float64Array
 
 export type TypedArrayConstructor =
-	| Int8ArrayConstructor
 	| Uint8ArrayConstructor
-	| Int16ArrayConstructor
-	| Uint16ArrayConstructor
-	| Int32ArrayConstructor
-	| Uint32ArrayConstructor
 	| Uint8ClampedArrayConstructor
+	| Uint16ArrayConstructor
+	| Uint32ArrayConstructor
+	| Int8ArrayConstructor
+	| Int16ArrayConstructor
+	| Int32ArrayConstructor
+	| BigUint64ArrayConstructor
+	| BigInt64ArrayConstructor
 	| Float32ArrayConstructor
 	| Float64ArrayConstructor
 
-export interface INDArrayOptions {
-	dtype?: TypedArrayEnum
-	shape?: number[]
-	size?: number
-}
+export type DTypeLike = TypedArrayEnum
 
 export interface INDArray {
 	data: TypedArray
-	dtype: TypedArrayEnum
+	dtype: DTypeLike
 	shape: number[]
+	strides: number[]
 	size: number
+	ndim: number
+	itemsize: number
+	nbytes: number
 }
