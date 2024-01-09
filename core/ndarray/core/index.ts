@@ -32,4 +32,3 @@ export class NDArray implements INDArray {
 			: new (getTypedArray(this.dtype))(data)
 	}
 }
-
